@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fitness World</title>
+</head>
+<body>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header, nav, section, footer {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+    
+    #program-details {
+        background-color: #f2f2f2;
+    }
+    </style>
+    <header>
+        <h1>Fitness World</h1>
+        <p>Tu destino para un estilo de vida saludable</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Programas</a></li>
+            <li><a href="#">Nutrición</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="featured-program">
+        <h2>Programa Destacado</h2>
+        <p>Descubre nuestro programa exclusivo para mejorar tu salud y forma física.</p>
+        <button onclick="showDetails()">Ver Detalles</button>
+    </section>
+
+    <section id="program-details" style="display: none;">
+        <h3>Detalles del Programa</h3>
+        <p>Este programa incluye entrenamientos personalizados y planes de nutrición diseñados para ti.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fitness World. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js">
+    function showDetails() {
+        var detailsSection = document.getElementById("program-details");
+        detailsSection.style.display = "block";
+    }
+    </script>
+
+</body>
+</html>
